@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rokaya Mohamed</title>
+    <link rel="shortcut icon" href="imgs/letter-r.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+  </head>
+  <body>
+    <button class="scroll-button"><i class="fa-solid fa-angle-up"></i></button>
+    <div class="settings-box">
+      <div class="settings-icon">
+        <i class="fa-solid fa-gear icon"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li
+              class="active"
+              data-color="#ff3946"
+              data-coloralt="#ff3946ed"
+            ></li>
+            <li data-color="#1787e0" data-coloralt="#2196f3"></li>
+            <li data-color="#f39c12" data-coloralt="#f39c12e0"></li>
+            <li data-color="#f44336" data-coloralt="#f44336e3"></li>
+            <li data-color="#e91e63" data-coloralt="#e91e63e6"></li>
+            <li data-color="#9c27b0" data-coloralt="#9c27b0ed"></li>
+            <li data-color="#673ab7" data-coloralt="#673ab7e3"></li>
+            <li data-color="#3f51b5" data-coloralt="#3f51b5e6"></li>
+            <li data-color="#2196f3" data-coloralt="#2196f3e8"></li>
+            <li data-color="#03a9f4" data-coloralt="#03a9f4e3"></li>
+            <li data-color="#00bcd4" data-coloralt="#00bcd4e3"></li>
+            <li data-color="#009688" data-coloralt="#009688f7"></li>
+            <li data-color="#4caf50" data-coloralt="#4caf50ed"></li>
+            <li data-color="#8bc34a" data-coloralt="#8bc34aeb"></li>
+            <li data-color="#cddc39" data-coloralt="#cddc39e6"></li>
+            <li data-color="#ffeb3b" data-coloralt="#ffeb3be6"></li>
+            <li data-color="#ff9800" data-coloralt="#ff9800e0"></li>
+            <li data-color="#ff5722" data-coloralt="#ff5722e8"></li>
+            <li data-color="#795548" data-coloralt="#795548ed"></li>
+            <li data-color="#9e9e9e" data-coloralt="#9e9e9ecf"></li>
+            <li data-color="#607d8b" data-coloralt="#607d8be0"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random image</h4>
+          <div class="random-backgrounds">
+            <span class="on active">On</span>
+            <span class="off">Off</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Dark Mode</h4>
+          <div class="dark-mode">
+            <span class="on">On</span>
+            <span class="off active">Off</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Language</h4>
+          <div class="language">
+            <span class="on active">EN</span>
+            <span class="off">AR</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset all options</button>
+      </div>
+    </div>
+    <div class="online">
+      <i class="fa-solid fa-wifi"></i>
+      <p>Your internet connection has been restored</p>
+      <button class="close"><i class="fa-solid fa-x"></i></button>
+    </div>
+    <div class="offline">
+      <i class="fa-solid fa-wifi line"></i>
+      <p>Your internet connection has been disconnected</p>
+      <button class="close"><i class="fa-solid fa-x"></i></button>
+    </div>
+    <!-- Start Header  -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">Rokaya M</a>
+        <nav class="navigation">
+          <button class="btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="scroll-progress">
+      <div></div>
+    </div>
+    <!-- End Header  -->
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <div class="image">
+          <img
+            src="imgs/landing-01.jpg"
+            alt="Landing Image"
+            class="landing-image"
+          />
+        </div>
+        <div class="content">
+          <h2>Self-explorer</h2>
+          <p>Guiding teens aged 13-19 on their journey of self-discovery.</p>
+          <a href="#skills">View My Skills</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Articles  -->
+    <section class="articles" id="articles">
+      <h2 class="main-title">Articles</h2>
+      <div class="container">
+        <h1 class="loading">Loading</h1>
+      </div>
+    </section>
+    <!-- End Articles  -->
+    <div class="spikes"></div>
+    <!-- Start Gallery  -->
+    <section class="gallery" id="gallery">
+      <h2 class="main-title">Gallery</h2>
+      <div class="container">
+        <div class="box">
+          <div class="image">
+            <img src="imgs/gallery-01.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="imgs/gallery-02.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="imgs/gallery-03.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="imgs/gallery-04.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="imgs/gallery-05.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="imgs/gallery-06.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery  -->
+    <!-- Start Skills  -->
+    <section class="skills" id="skills">
+      <h2 class="main-title">Skills</h2>
+      <div class="container">
+        <div class="card">
+          <div class="icon">
+            <i
+              class="fa-solid fa-microphone-lines"
+              style="color: var(--main-color)"
+            ></i>
+          </div>
+          <div class="content">
+            <h3>Voice Overing</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i
+              class="fa-solid fa-language"
+              style="color: var(--main-color)"
+            ></i>
+          </div>
+          <div class="content">
+            <h3>
+              Language<br />
+              <span style="color: var(--main-color)">German</span> : A2
+            </h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i
+              class="fa-solid fa-language"
+              style="color: var(--main-color)"
+            ></i>
+          </div>
+          <div class="content">
+            <h3>
+              Language<br />
+              <span style="color: var(--main-color)">English</span> : B2
+            </h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i
+              class="fa-solid fa-language"
+              style="color: var(--main-color)"
+            ></i>
+          </div>
+          <div class="content">
+            <h3>
+              Language<br />
+              <span style="color: var(--main-color)">Arabic</span> : C2
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills  -->
+    <div class="spikes"></div>
+    <!-- Start Features  -->
+    <section class="features-sec align-center">
+      <h2 class="main-title">Featured</h2>
+      <div class="container align-center">
+        <!-- <h2 class="mt-0 mb-25">Experiences</h2> -->
+        <ul class="m-0 align-center">
+          <li class="d-flex align-center mt-15 p-relative">
+            <img
+              src="imgs/NASA Space Apps Challenge - Cairo Hacathon.jpeg"
+              loading="lazy"
+            />
+            <div class="pl-15 blue align-center">
+              <h3>NASA Space Apps Challenge - Cairo Hacathon</h3>
+              <p class="fs-14 fw-bold mt-0 mb-5">
+                Working on global issues for a sustainable world gives me the
+                feeling of real changemakers who care about having a sustainable
+                life. I have gained a wide range of connections from different
+                backgrounds and experiences.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15 p-relative">
+            <img src="imgs/Build-In-A-Box (BIAB'23).jpeg" loading="lazy" />
+            <div class="pl-15">
+              <h3>Build-In-A-Box (BIAB'23)</h3>
+              <p class="fs-14 fw-bold mt-0 mb-5">
+                Recognized the most outstanding speaker out of the remaining 8
+                teams.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15 p-relative">
+            <img src="imgs/Celebrating the national day.jpeg" loading="lazy" />
+            <div class="pl-15">
+              <h3>Celebrating the national day</h3>
+              <p class="fs-14 fw-bold mt-0 mb-5">
+                As exchange students in India we presented our countries in
+                Hindi and participated in singing their national song "Ae watan"
+                🇮🇳
+              </p>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15">
+            <img
+              src="imgs/Indian Institute of Technology Indore.jpeg"
+              loading="lazy"
+              alt=""
+            />
+            <div class="pl-15 orange">
+              <h3>Indian Institute of Technology Indore</h3>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15">
+            <img
+              src="imgs/The independence day in Indore, India.jpeg"
+              alt=""
+            />
+            <div class="pl-15 orange">
+              <h3>The independence day in Indore, India</h3>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15">
+            <img
+              src="imgs/FINAL DAY @ Logicae Scientific Winter Program.jpeg"
+              alt=""
+            />
+            <div class="pl-15 orange">
+              <h3>FINAL DAY @ Logicae Scientific Winter Program</h3>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15">
+            <img
+              src="imgs/Sharing my experince with the FREE PRESS Newspaper.jpeg"
+              alt=""
+            />
+            <div class="pl-15 orange">
+              <h3>Sharing my experince with the FREE PRESS Newspaper</h3>
+              <p class="fs-14 fw-bold mt-0 mb-5">
+                During the in-person period in Indore, India, while I was
+                wearing "Kurti" which is the common Indian dress for festivals I
+                celebrated one of them with my host family called (Raksha
+                Bandhan).
+              </p>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15">
+            <img
+              src="imgs/A field trip to the International Newspaper (FFREE PRESS) located in Indore, India..jpeg"
+              alt=""
+            />
+            <div class="pl-15 orange">
+              <h3>
+                A field trip to the International Newspaper (FFREE PRESS)
+                located in Indore, India.
+              </h3>
+            </div>
+          </li>
+          <li class="d-flex align-center mt-15">
+            <img
+              src="imgs/The 9-month MARJ3 Fellowship Graduation Photo.jpeg"
+              alt=""
+            />
+            <div class="pl-15 orange">
+              <h3>The 9-month MARJ3 Fellowship Graduation Photo</h3>
+              <p class="fs-14 fw-bold mt-0 mb-5">
+                The purpose of the Fellowship program is to provide an
+                opportunity for individuals to substantially contribute to and
+                learn from our work. The Fellow will be given specific tasks and
+                responsibilities and will be challenged to develop their
+                capabilities and gain experience. The Fellow is expected to be
+                flexible and to take part in various activities offline and
+                online.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Features  -->
+    <!-- Start Latest News  -->
+    <section class="latest-news">
+      <h2 class="main-title">Latest News</h2>
+      <div class="container">
+        <div class="latest-news-content p-20 bg-white rad-10 p-relative">
+          <ul class="m-0 p-relative">
+            <li class="mt-25 d-flex align-center done one">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+            </li>
+            <li class="mt-25 d-flex align-center done two">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+            </li>
+            <li class="mt-25 d-flex align-center done three">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+            </li>
+            <li class="mt-25 d-flex align-center current four">Coming Soon</li>
+          </ul>
+          <img class="launch-icon hide-mobile" src="imgs/project.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End Latest News  -->
+    <div class="spikes"></div>
+    <!-- Start Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <h2 class="main-title">Testimonials</h2>
+      <div class="container">
+        <div class="box">
+          <img src="imgs/testimonials-01.jpeg" alt="" />
+          <h3>Saif Elmaleh</h3>
+          <span class="title"
+            >Aerospace Engineering & Political Science Bachelor's Dual Degree |
+            ALA 2022 | Space ExplorationAerospace Engineering & Political
+            Science. January 15, 2023, Saif managed Rokaya directly</span
+          >
+          <p>
+            Rokaya is a perseverant leader. I had the honor of instructing her
+            in the Logicae Science Winter Program (LSWP), where she was learning
+            scientific research and entrepreneurship. Throughout the program,
+            she has shown a consistent growth mindset by asking for feedback and
+            utilizing it to improve her work. She has demonstrated
+            distinguishable awareness of complex concepts in her
+            research/project: "How to make a heat pump drone brella?" Her
+            leadership was evident in volunteering to help and support her peers
+            by explaining the concepts taught. Rokaya's communication skills are
+            sharp. She utilizes body language, voice tone, and accurate wording
+            while presenting. Nonetheless, One room for improvement will be in
+            explaining the complicated topics to the general audience.
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/testimonials-05.jpeg" alt="" />
+          <h3>Ahmed Farag</h3>
+          <span class="title"
+            >Student, Data Analyst, Video Editor, Researcher, SEO
+            specialist</span
+          >
+          <p>
+            I worked with Rokaya for the time of Marj3 fellowship and we were
+            together in a team many times with different positions and work
+            order, and what is common in all times and also our colleagues agree
+            with this is the strong and strict care from Rokaya to quality by
+            giving every detail its proper care wihout neglegence to the target
+            quantity of work.
+            <br />
+            That quality-quantity balance is hard to achieve except for focused
+            organized candidates who put every task in the proper time to get
+            the maximum efficiency and from my experience with her I assume that
+            Rokaya is one of those candidates and no doubt it s highly
+            recommended to hire her and work with her to win an always-improving
+            team member.
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/testimonials-02.jpeg" alt="" />
+          <h3>Stephan van de Ven</h3>
+          <span class="title"
+            >Driving individuals, teams, and communities to learn & thrive to
+            build stronger relationships with themselves, their communities, and
+            the wider world!
+          </span>
+          <p>
+            Rokaya is a bright young woman that has shown great interest in the
+            STEM field, sustainability, intercultural communication and
+            collaboration. During sessions they contributed key conversation
+            pieces for the group to learn and grow. She has shown herself to be
+            a remarkable student noticing opportunities to learn and share with
+            others.
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/testimonials-03.jpeg" alt="" />
+          <h3>Carolyn Rehn</h3>
+          <span class="title">Learning & Development Professional </span>
+          <p>
+            I would like to recommend Rokaya for this position . I was her
+            Facilitator in an intensive twelve week Global STEM Changemaker
+            program. Rokaya demonstrated great tenacity, follow through, and
+            commitment in the program and was a contributing participant with
+            good insight and creativity . I think she would be a great asset to
+            any team. Sincerely Carolyn Rehn Global Training and Learning
+            Consultant
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/testimonials-06.jpeg" alt="" />
+          <h3>Hazem Bahaa</h3>
+          <span class="title">Accountant</span>
+          <p>
+            “I rarely come across real talents who stand out like Rokaya. I had
+            the pleasure of working with Rokaya for nine months at Marj3,
+            collaborating on several teams. Rokaya’s ability to delivering
+            information and handle tense situations among colleagues was unlike
+            any I’ve seen before and made a dramatic increase in the
+            productivity level of our company. No matter how big the problem is,
+            Rokaya made sure everyone left with a smile. As a team member or a
+            leader, Rokaya earns my highest recommendation. I’m confident that
+            her proven track record of excellent work ethic, unparalleled
+            attention to detail, and knack for leadership will make her an
+            immediate asset to any team, and allow her to contribute to the
+            team’s success.”
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/testimonials-04.jpeg" alt="" />
+          <h3>AHMED ELGEBALY</h3>
+          <span class="title"
+            >COO &Co-Founder at Emonovo (formaly MARJ3)|MENA leading edtech
+            platform |2.4M monthly visits|Startup of the year 2018|25 UNDER 25
+            in 2017|Entrepreneurship Trainer|Education&Content Manager|Uppsala
+            Entrepreneurship Master</span
+          >
+          <p>
+            I have worked with Rokaya as she was a fellow at Emonovo (Formally
+            Marj3) the role of for approximately 9 months. I was particularly
+            impressed by Rokaya’s ability to handle even the accurate details
+            and deliver with high quality tasks at her young age. That skill
+            often takes years to develop among professionals, but it seemed to
+            come perfectly naturally to her. As a team member or a leader,
+            Rokaya earns my highest recommendation.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials  -->
+    <!-- Srtart Contact  -->
+    <section class="contact" id="contact">
+      <h2 class="main-title">Contact me</h2>
+      <div class="container">
+        <div class="content">
+          <form action="">
+            <input
+              class="main-input"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+            />
+            <input
+              class="main-input"
+              type="email"
+              name="mail"
+              placeholder="Your Email"
+            />
+            <textarea
+              class="main-input"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+          <div class="info">
+            <div class="info">
+              <h4>Where We Are</h4>
+              <address>
+                Address :<br />Egypt <br />
+                Cairo
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact  -->
+    <!-- Start Footer  -->
+    <footer>
+      <div class="container">
+        <h4 class="footer-title">
+          All Copyrights Reserved<sup>&copy;</sup> @ <span>Rokaya Mohamed</span>
+          <sub></sub>
+        </h4>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/rokaya-zaki/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articlesz</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">Rokaya M</a>
+        <nav class="navigation">
+          <button class="btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" class="active">Articles</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="scroll-progress">
+      <div></div>
+    </div>
+    <section class="articles" id="articles">
+      <h2 class="main-title">Articles</h2>
+      <div class="container"></div>
+    </section>
+    <script>
+      fetch(
+        "https://www.googleapis.com/blogger/v3/blogs/2751603337577110409/posts?key=AIzaSyBMNdHAqDUMki47IJccq052xzmAW5ZYkzI"
+      )
+        .then((result) => result.json())
+        .then((data) => {
+          data.items.forEach(function (post) {
+            const articles = document.querySelector(".articles .container");
+            const mainBox = document.createElement("div");
+            mainBox.classList.add("box");
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(post.content, "text/html");
+            const firstImage = doc.querySelector("img");
+            const img = document.createElement("img");
+            img.setAttribute("alt", "Article Preview");
+            img.src = firstImage ? firstImage.src : "imgs/landing-02.jpg";
+            const contentDiv = document.createElement("div");
+            contentDiv.classList.add("content");
+            const contentHeading = document.createElement("h3");
+            contentHeading.innerHTML = post.title;
+            const contentP = document.createElement("p");
+            contentP.innerHTML = `Published: ${post.published.slice(
+              0,
+              10
+            )} <br> Updated: ${post.updated.slice(0, 10)}`;
+            contentDiv.append(contentHeading, contentP);
+            const infoDiv = document.createElement("div");
+            infoDiv.classList.add("info");
+            infoDiv.onclick = function () {
+              window.open(post.url, "_blank");
+            };
+            const infoLink = document.createElement("a");
+            infoLink.setAttribute("target", "_blank");
+            infoLink.href = post.url;
+            infoLink.innerHTML = "Read More";
+            const infoIcon = document.createElement("i");
+            infoIcon.classList.add("fa-solid", "fa-arrow-right-long");
+            infoDiv.append(infoLink, infoIcon);
+            mainBox.append(img, contentDiv, infoDiv);
+            articles.appendChild(mainBox);
+          });
+        });
+    </script>
+  </body>
+</html>
